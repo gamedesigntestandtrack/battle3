@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:22;
+}
+
+#game{
+    width:500px;
+    height:500px;
+    border:4px solid #171918;
+}
+
+#character{
+    width:60px;
+    height:60px;
+    /*background-color:green;*/
+    background-image: url(cartoonman.png);
+    position:relative;
+    top:320px;
+    background-size: contain;
+    position:relative;
+    top:50%
+}
+
+#enemy{
+    width:60px;
+    height:50px;
+    background-image: url(enemy.png);
+    background-size:contain;
+    position:relative;
+    top:50%;
+    animation: moveenemy 1s infinite linear;
+    
+}
+
+
+
+
+/* new class called animate */
+.animate{
+    animation: jump 500ms;
+}
+
+
+
+
+@keyframes moveenemy{
+    0%{left:440px;}
+    50%{top:58px;}
+    100%{left:0px; top:320x;}
+}
+
+@keyframes jump{
+    0%{top:380px;}
+    30%{top:50px;}
+    50%{top:40px;}
+    100%{top:380px;}
+}
+
+
+
+
+
+/* adding sky*/
+#sky{
+    width:500px;
+    height:340px;
+    /*background-color:skyblue;*/
+    background-image:url(background.jpg);
+    background-size: contain;
+    position:absolute;
+    top:118;
+    
+}
+
+/* adding ground */
+#ground{
+    width:500px;
+    height:220px;
+    background-color:bisque;
+    position:absolute;
+    background-size: contain;
+    top:400px;
+}
+
+
